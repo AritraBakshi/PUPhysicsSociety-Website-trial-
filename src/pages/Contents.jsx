@@ -9,12 +9,12 @@ const sample = [
 
 export default function Contents({ searchTerm }) {
   // Filter contents using searchTerm (debug: always show if empty)
-  const filtered = !searchTerm
-    ? sample
-    : sample.filter(c =>
-        c.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        c.excerpt.toLowerCase().includes(searchTerm.toLowerCase())
-      )
+  //const filtered = !searchTerm
+    //? sample
+    //: sample.filter(c =>
+        //c.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        //c.excerpt.toLowerCase().includes(searchTerm.toLowerCase())
+      //)
 
   return (
     <section>
