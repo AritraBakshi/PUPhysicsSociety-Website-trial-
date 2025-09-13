@@ -2,7 +2,7 @@ import React from 'react'
 
 const events = [
   { id: 1, title: 'Physics Workshop: Quantum Basics', date: '2025-10-05', description: 'Beginner friendly workshop.' },
-  { id: 2, title: 'Guest Talk: Astrophysics', date: '2025-11-12', description: 'Talk by Dr. Meera.' }
+  { id: 2, title: 'Guest Talk: General Relativity', date: '2025-11-12', description: 'Talk by Einstein.' }
 ]
 
 export default function Events() {
