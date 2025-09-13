@@ -1,8 +1,7 @@
 import React from 'react'
 
 const members = [
-  { id: 1, name: 'Asha Rao', role: 'President' },
-  { id: 2, name: 'Daniel Kim', role: 'Secretary' }
+  { id: 1, name: 'Aritra Bakshi', role: 'Website Development' },
 ]
 
 export default function Members() {
