@@ -7,6 +7,8 @@ import Contents from './pages/Contents'
 import Members from './pages/Members'
 import Events from './pages/Events'
 import Physics101 from './pages/Physics101'
+// import GettingStarted from './pages/GettingStarted'
+// import ProjectIdeas from './pages/ProjectIdeas'
 
 export default function App() {
   const [searchTerm, setSearchTerm] = useState('')
@@ -36,9 +38,12 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home searchTerm={searchTerm} />} />
           <Route path="/contents" element={<Contents searchTerm={searchTerm} />} />
-          <Route path="/contents/physics-101" element={<Physics101 searchTerm={searchTerm} />} />
-          <Route path="/members" element={<Members searchTerm={searchTerm} />} />
-          <Route path="/events" element={<Events searchTerm={searchTerm} />} />
+          {/* Individual content pages */}
+          <Route path="/contents/physics-101" element={<Physics101 />} />
+          {/* <Route path="/contents/getting-started" element={<GettingStarted />} /> */}
+          {/* <Route path="/contents/project-ideas" element={<ProjectIdeas />} /> */}
+          <Route path="/members" element={<Members />} />
+          <Route path="/events" element={<Events />} />
         </Routes>
       </main>
     </div>
