@@ -1,22 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Header = ({ onSearch }) => {
-  const [searchTerm, setSearchTerm] = useState('');
-
-  const handleChange = (e) => {
-    setSearchTerm(e.target.value);
-    onSearch(e.target.value);
-  };
-
+const Header = ({ searchTerm, setSearchTerm }) => {
   return (
-    <header className="header">
+    <header className="header flex justify-end items-center py-4">
       {/* Other header content */}
       <input
         type="text"
         id="searchBar"
         placeholder="Search..."
         value={searchTerm}
-        onChange={handleChange}
+        onChange={e => setSearchTerm(e.target.value)}
         style={{
           padding: '0.5em',
           fontSize: '1em',
